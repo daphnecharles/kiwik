@@ -18,6 +18,32 @@ export default function Hints({ yourLocalBalance, mainnetProvider, price, addres
     <div>
       <div style={{ margin: 32 }}>
         <span style={{ marginRight: 8 }}>👷</span>
+        Checkout the <b>documentation</b> for Lens Protocol <a target="_blank" href="https://docs.lens.dev/docs/what-is-lens">here</a> and for Scaffold-ETH <a target="_blank" href="https://docs.scaffoldeth.io/scaffold-eth/">here.</a>
+      </div>
+      <div style={{ margin: 32 }}>
+        <span style={{ marginRight: 8 }}>👷</span>
+        Edit the <b>Lens contract ABI</b> in
+        <span
+          className="highlight"
+          style={{ marginLeft: 4, /* backgroundColor: "#f9f9f9", */ padding: 4, borderRadius: 4, fontWeight: "bolder" }}
+        >
+          packages/react-app/src/contracts/external_contracts.js
+        </span>
+      </div>
+
+      <div style={{ margin: 32 }}>
+        <span style={{ marginRight: 8 }}>🎛</span>
+        Edit your <b>frontend</b> in
+        <span
+          className="highlight"
+          style={{ marginLeft: 4, /* backgroundColor: "#f9f9f9", */ padding: 4, borderRadius: 4, fontWeight: "bolder" }}
+        >
+          packages/reactapp/src/App.js
+        </span>
+      </div>
+
+      <div style={{ margin: 32 }}>
+        <span style={{ marginRight: 8 }}>👷</span>
         Edit your <b>contract</b> in
         <span
           className="highlight"
@@ -46,17 +72,6 @@ export default function Hints({ yourLocalBalance, mainnetProvider, price, addres
           style={{ marginLeft: 4, /* backgroundColor: "#f9f9f9", */ padding: 4, borderRadius: 4, fontWeight: "bolder" }}
         >
           packages/react-app/src/contracts/
-        </span>
-      </div>
-
-      <div style={{ margin: 32 }}>
-        <span style={{ marginRight: 8 }}>🎛</span>
-        Edit your <b>frontend</b> in
-        <span
-          className="highlight"
-          style={{ marginLeft: 4, /* backgroundColor: "#f9f9f9", */ padding: 4, borderRadius: 4, fontWeight: "bolder" }}
-        >
-          packages/reactapp/src/App.js
         </span>
       </div>
 

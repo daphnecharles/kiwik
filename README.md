@@ -1,3 +1,11 @@
+# 🏗 Scaffold-ETH-Lens-Starter-Kit
+
+🧪 Quickly experiment & build your own DApp on top of [Lens Protocol](https://lens.dev/garden)
+
+👷 Checkout the documentation for Lens Protocol [here](https://docs.lens.dev/docs/what-is-lens)
+
+![plot](./packages/react-app/public/starter-kit-promo.png)
+
 # 🏗 Scaffold-ETH
 
 > everything you need to build on Ethereum! 🚀
