@@ -4,7 +4,7 @@
 
 👷 Checkout the documentation for Lens Protocol [here](https://docs.lens.dev/docs/what-is-lens)
 
-![image](https://ibb.co/QfmVcP9)
+![alt text](https://ibb.co/QfmVcP9)
 
 # 🏗 Scaffold-ETH
 
