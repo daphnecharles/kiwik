@@ -4,6 +4,8 @@
 
 👷 Checkout the documentation for Lens Protocol [here](https://docs.lens.dev/docs/what-is-lens)
 
+![image](https://user-images.githubusercontent.com/22616592/158831298-bb4c3824-0e8e-43a6-adbe-b070eed4bf6e.png)
+
 # 🏗 Scaffold-ETH
 
 > everything you need to build on Ethereum! 🚀
