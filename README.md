@@ -4,6 +4,8 @@
 
 👷 Checkout the documentation for Lens Protocol [here](https://docs.lens.dev/docs/what-is-lens)
 
+![Alt text](packages/react-app/public/starter-kit-promo.jpg?raw=true)
+
 # 🏗 Scaffold-ETH
 
 > everything you need to build on Ethereum! 🚀
