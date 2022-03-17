@@ -4,7 +4,7 @@
 
 👷 Checkout the documentation for Lens Protocol [here](https://docs.lens.dev/docs/what-is-lens)
 
-![Alt text](packages/react-app/public/starter-kit-promo.png?raw=true)
+![plot](./packages/react-app/public/starter-kit-promo.png)
 
 # 🏗 Scaffold-ETH
 
