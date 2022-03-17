@@ -59,7 +59,7 @@ const initialNetwork = NETWORKS.localhost; // <------- select your target fronte
 const DEBUG = true;
 const NETWORKCHECK = true;
 const USE_BURNER_WALLET = true; // toggle burner wallet feature
-const USE_NETWORK_SELECTOR = false;
+const USE_NETWORK_SELECTOR = true;
 
 const web3Modal = Web3ModalSetup();
 
@@ -73,7 +73,7 @@ const providers = [
 function App(props) {
   // specify all the chains your app is available on. Eg: ['localhost', 'mainnet', ...otherNetworks ]
   // reference './constants.js' for other networks
-  const networkOptions = [initialNetwork.name, "mainnet", "rinkeby"];
+  const networkOptions = ["mumbai", initialNetwork.name];
 
   const [injectedProvider, setInjectedProvider] = useState();
   const [address, setAddress] = useState();
@@ -92,6 +92,7 @@ function App(props) {
   const mainnetProvider = useStaticJsonRPC(providers);
 
   if (DEBUG) console.log(`Using ${selectedNetwork} network`);
+  if (DEBUG) console.log(`Blockexplorer: ${blockExplorer}`);
 
   // 🛰 providers
   if (DEBUG) console.log("📡 Connecting to Mainnet Ethereum");
@@ -260,17 +261,17 @@ function App(props) {
         <Menu.Item key="/">
           <Link to="/">App Home</Link>
         </Menu.Item>
+        <Menu.Item key="/exampleui">
+          <Link to="/exampleui">Lens ExampleUI</Link>
+        </Menu.Item>
         <Menu.Item key="/debug">
-          <Link to="/debug">Debug Contracts</Link>
+          <Link to="/debug">Debug Lens Contracts</Link>
         </Menu.Item>
         <Menu.Item key="/hints">
           <Link to="/hints">Hints</Link>
-        </Menu.Item>
-        <Menu.Item key="/exampleui">
-          <Link to="/exampleui">ExampleUI</Link>
-        </Menu.Item>
+        {/*</Menu.Item>
         <Menu.Item key="/mainnetdai">
-          <Link to="/mainnetdai">Mainnet DAI</Link>
+          <Link to="/mainnetdai">Mainnet DAI</Link>*/}
         </Menu.Item>
         <Menu.Item key="/subgraph">
           <Link to="/subgraph">Subgraph</Link>
@@ -289,7 +290,7 @@ function App(props) {
                 and give you a form to interact with it locally
             */}
 
-          <Contract
+          {/*<Contract
             name="YourContract"
             price={price}
             signer={userSigner}
@@ -297,7 +298,36 @@ function App(props) {
             address={address}
             blockExplorer={blockExplorer}
             contractConfig={contractConfig}
+          />*/}
+
+          <Contract
+            name="ProfileCreationProxy"
+            price={price}
+            signer={userSigner}
+            provider={localProvider}
+            address={address}
+            blockExplorer={blockExplorer}
+            contractConfig={contractConfig}
           />
+          <Contract
+            name="LensHubProxy"
+            price={price}
+            signer={userSigner}
+            provider={localProvider}
+            address={address}
+            blockExplorer={blockExplorer}
+            contractConfig={contractConfig}
+          />
+          <Contract
+            name="LensHubImplementation"
+            price={price}
+            signer={userSigner}
+            provider={localProvider}
+            address={address}
+            blockExplorer={blockExplorer}
+            contractConfig={contractConfig}
+          />
+
         </Route>
         <Route path="/hints">
           <Hints
@@ -319,9 +349,10 @@ function App(props) {
             writeContracts={writeContracts}
             readContracts={readContracts}
             purpose={purpose}
+            blockExplorer={blockExplorer}
           />
         </Route>
-        <Route path="/mainnetdai">
+{/*        <Route path="/mainnetdai">
           <Contract
             name="DAI"
             customContract={mainnetContracts && mainnetContracts.contracts && mainnetContracts.contracts.DAI}
@@ -332,17 +363,8 @@ function App(props) {
             contractConfig={contractConfig}
             chainId={1}
           />
-          {/*
-            <Contract
-              name="UNI"
-              customContract={mainnetContracts && mainnetContracts.contracts && mainnetContracts.contracts.UNI}
-              signer={userSigner}
-              provider={mainnetProvider}
-              address={address}
-              blockExplorer="https://etherscan.io/"
-            />
-            */}
-        </Route>
+        </Route>*/}
+
         <Route path="/subgraph">
           <Subgraph
             subgraphUri={props.subgraphUri}
