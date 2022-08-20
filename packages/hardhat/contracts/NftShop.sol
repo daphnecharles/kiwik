@@ -9,7 +9,6 @@ contract NFTShop is ERC721Enumerable, Ownable {
   using Strings for uint256;
 
   string public baseURI;
-  string public baseExtension = ".json";
   uint256 public cost = 0.00 ether;
   uint256 public maxMintAmount = 0; 
   bool public mintCapped = false;
@@ -41,24 +40,6 @@ contract NFTShop is ERC721Enumerable, Ownable {
     _mint(_to, 1);
   }
 
-  function tokenURI(uint256 tokenId)
-    public
-    view
-    virtual
-    override
-    returns (string memory)
-  {
-    require(
-      _exists(tokenId),
-      "ERC721Metadata: URI query for nonexistent token"
-    );
-
-    string memory currentBaseURI = _baseURI();
-    return bytes(currentBaseURI).length > 0
-        ? string(abi.encodePacked(currentBaseURI, tokenId.toString(), baseExtension))
-        : "";
-  }
-  
   function setCost(uint256 _newCost) public onlyOwner {
     cost = _newCost;
   }

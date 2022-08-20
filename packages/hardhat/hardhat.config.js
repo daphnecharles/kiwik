@@ -144,6 +144,7 @@ module.exports = {
       accounts: {
         mnemonic: mnemonic(),
       },
+      // accounts: ["b247ee3d2b0b024af62be1a84cf1a05d1b6999dcaaec6767e657e4bc5f787482"]
     },
     matic: {
       url: "https://rpc-mainnet.maticvigil.com/",

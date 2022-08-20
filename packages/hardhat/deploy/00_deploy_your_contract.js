@@ -17,16 +17,33 @@ module.exports = async ({ getNamedAccounts, deployments, getChainId }) => {
   const { deployer } = await getNamedAccounts();
   const chainId = await getChainId();
 
-  await deploy("YourContract", {
-    // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
-    from: deployer,
-    // args: [ "Hello", ethers.utils.parseEther("1.5") ],
-    log: true,
-    waitConfirmations: 5,
-  });
+  const name = "Example NFT"
+  const uri = "bafybeicqgpqwpf3kdpngkzc5modcswibvmxetwz6ttmf7cvgroipewpsbu"
+  const weiValue = ethers.BigNumber.from('100000000')
+  const cost = ethers.utils.formatEther(weiValue)
+  const maxMintAmount = 0
+  const mintCapped = false
+  const YourContract = await ethers.getContract("NFTShop", deployer);
+  YourContract.deploy(name, uri, "00000000001", maxMintAmount, mintCapped )
 
+  // await deploy("NFTShop", {
+  //   // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
+  //   from: deployer,
+  //   // args: [ "Hello", ethers.utils.parseEther("1.5") ],
+  //   log: true,
+  //   waitConfirmations: 5,
+  //    name : "Example NFT",
+  //    uri : "bafybeicqgpqwpf3kdpngkzc5modcswibvmxetwz6ttmf7cvgroipewpsbu",
+  //    cost : '100000000', 
+  //    maxMintAmount : 0,
+  //    mintCapped : false
+  // });
+
+  
   // Getting a previously deployed contract
-  const YourContract = await ethers.getContract("YourContract", deployer);
+  // const YourContract = await ethers.getContract("NFTShop", deployer);
+  // const yourContract = await ethers.getContractAt('NFTShop', "0xaAC799eC2d00C013f1F11c37E654e59B0429DF6A") //<-- if you want to instantiate a version of a contract at a specific address!
+
   /*  await YourContract.setPurpose("Hello");
   
     To take ownership of yourContract using the ownable library uncomment next line and add the 
