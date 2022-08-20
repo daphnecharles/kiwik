@@ -22,7 +22,8 @@ import {
   NetworkDisplay,
   FaucetHint,
   NetworkSwitch,
-  PricingTiers
+  HomeScreen,
+  SearchResults
 } from "./components";
 import { NETWORKS, ALCHEMY_KEY } from "./constants";
 import externalContracts from "./contracts/external_contracts";
@@ -32,10 +33,9 @@ import { Transactor, Web3ModalSetup } from "./helpers";
 import { Home, ExampleUI, Hints, Subgraph } from "./views";
 import { useStaticJsonRPC } from "./hooks";
 
-// import "./contracts/NftShop.sol";
-
 const { ethers, ContractFactory } = require("ethers");
 import { abi, bytecode } from "./helpers/NftMinter";
+
 /*
     Welcome to 🏗 scaffold-eth !
 
@@ -277,16 +277,8 @@ function App(props) {
   return (
     <div className="App">
       {/* ✏️ Edit the header and change the title to your project name */}
-      <Header />
-      <NetworkDisplay
-        NETWORKCHECK={NETWORKCHECK}
-        localChainId={localChainId}
-        selectedChainId={selectedChainId}
-        targetNetwork={targetNetwork}
-        logoutOfWeb3Modal={logoutOfWeb3Modal}
-        USE_NETWORK_SELECTOR={USE_NETWORK_SELECTOR}
-      />
-      <Menu style={{ textAlign: "center", marginTop: 40 }} selectedKeys={[location.pathname]} mode="horizontal">
+      {/* <Header /> */}
+      {/* <Menu style={{ textAlign: "center", marginTop: 40 }} selectedKeys={[location.pathname]} mode="horizontal">
         <Menu.Item key="/">
           <Link to="/">App Home</Link>
         </Menu.Item>
@@ -300,15 +292,15 @@ function App(props) {
           <Link to="/hints">Hints</Link>
         {/*</Menu.Item>
         <Menu.Item key="/mainnetdai">
-          <Link to="/mainnetdai">Mainnet DAI</Link>*/}
+          <Link to="/mainnetdai">Mainnet DAI</Link>
         </Menu.Item>
         <Menu.Item key="/subgraph">
           <Link to="/subgraph">Subgraph</Link>
         </Menu.Item>
-      </Menu>
+      </Menu> */}
 
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/demo">
           {/* pass in any web3 props to this Home component. For example, yourLocalBalance */}
           <Home yourLocalBalance={yourLocalBalance} readContracts={readContracts} />
         </Route>
@@ -358,8 +350,27 @@ function App(props) {
           />
 
         </Route>
-        <Route path="/test">
+        <Route path="/">
+          <HomeScreen {...homeScreenData} NETWORKCHECK={NETWORKCHECK}
+        localChainId={localChainId}
+        selectedChainId={selectedChainId}
+        targetNetwork={targetNetwork}
+        logoutOfWeb3Modal={logoutOfWeb3Modal}
+        USE_NETWORK_SELECTOR={USE_NETWORK_SELECTOR}/>
         </Route>
+        <Route path="/:path(|search-results)">
+          <SearchResults />
+        </Route>
+
+        <Route path="/discover">
+          <HomeScreen {...homeScreenData} NETWORKCHECK={NETWORKCHECK}
+        localChainId={localChainId}
+        selectedChainId={selectedChainId}
+        targetNetwork={targetNetwork}
+        logoutOfWeb3Modal={logoutOfWeb3Modal}
+        USE_NETWORK_SELECTOR={USE_NETWORK_SELECTOR}/>
+        </Route>
+
         <Route path="/hints">
           <Hints
             address={address}
@@ -408,7 +419,7 @@ function App(props) {
 
 
       {/* 👨‍💼 Your account is in the top right with a wallet at connect options */}
-      <div style={{ position: "fixed", textAlign: "right", right: 0, top: 0, padding: 10 }}>
+      <div style={{ position: "absolute", textAlign: "right", right: 0, top: 0, padding: 10, color: 'white'}}>
         <div style={{ display: "flex", flex: 1, alignItems: "center" }}>
           {USE_NETWORK_SELECTOR && (
             <div style={{ marginRight: 20 }}>
@@ -496,3 +507,33 @@ function App(props) {
 }
 
 export default App;
+const homeScreenData = {
+  rectangle11: "https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/rectangle-11@1x.png",
+  iconSearch: "https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/search-icon@2x.png",
+  search: "Search",
+  signUp: "Conect Wallet",
+  logIn: "Log in",
+  discover: "Discover",
+  stats: "Stats",
+  aboutUs: "About us",
+  discoverCollectA: "Discover, collect, and create high quality 3D assets",
+  kiwikIsTheWorlds: "KIWIK is the world’s first decentralized marketplace for 3D assets.",
+  group51: "https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/image-1@1x.png",
+  surname1: "Golden Dragon",
+  x3DAssetByShannonCase1: "3D asset by Shannon Case",
+  ellipse21: "https://bafkreiau7z5looui7rubbhfeo5k6udh54bkvl6t4332hdavgq53bxclpea.ipfs.nftstorage.link/",
+  group52: "https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/image-1-1@1x.png",
+  surname2: "Golden Dragon",
+  x3DAssetByShannonCase2: "3D asset by Shannon Case",
+  ellipse22: "https://bafkreiau7z5looui7rubbhfeo5k6udh54bkvl6t4332hdavgq53bxclpea.ipfs.nftstorage.link/",
+  explore: "Explore",
+  image1: "https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/image-1-3@1x.png",
+  fantasyScenery: "Fantasy Scenery",
+  x3DAssetByShannonCase3: "3D asset by Shannon Case",
+  ellipse23: "https://bafkreiau7z5looui7rubbhfeo5k6udh54bkvl6t4332hdavgq53bxclpea.ipfs.nftstorage.link/",
+  trendingNow: "Trending Now",
+  group53: "https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/image-1-2@1x.png",
+  surname3: "Golden Dragon",
+  x3DAssetByShannonCase4: "3D asset by Shannon Case",
+  ellipse24: "https://bafkreiau7z5looui7rubbhfeo5k6udh54bkvl6t4332hdavgq53bxclpea.ipfs.nftstorage.link/",
+};

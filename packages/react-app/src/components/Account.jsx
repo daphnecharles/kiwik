@@ -101,7 +101,7 @@ export default function Account({
             signer={userSigner}
             ensProvider={mainnetProvider}
             price={price}
-            color="#1890ff"
+            color="white"
           />
         </>
       ) : useBurner ? (
@@ -124,7 +124,7 @@ export default function Account({
             signer={userSigner}
             ensProvider={mainnetProvider}
             price={price}
-            color="#1890ff"
+            color="white"
           />
         </>
       ) : (

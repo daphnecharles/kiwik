@@ -69,7 +69,7 @@ export default function Wallet(props) {
         rotate={-90}
         style={{
           padding: 7,
-          color: props.color ? props.color : "",
+          color: "white",
           cursor: "pointer",
           fontSize: 28,
           verticalAlign: "middle",
@@ -290,14 +290,14 @@ export default function Wallet(props) {
   }
 
   return (
-    <span>
+    <span style={{ color: "white" }}>
       {providerSend}
       <Modal
         visible={open}
         title={
           <div>
             {selectedAddress ? <Address address={selectedAddress} ensProvider={props.ensProvider} /> : <Spin />}
-            <div style={{ float: "right", paddingRight: 25 }}>
+            <div style={{ float: "right", paddingRight: 25, color: "white" }}>
               <Balance address={selectedAddress} provider={props.provider} dollarMultiplier={props.price} />
             </div>
           </div>
