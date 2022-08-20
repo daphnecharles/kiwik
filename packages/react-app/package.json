@@ -11,8 +11,6 @@
     "@ant-design/icons": "^4.2.2",
     "@apollo/client": "^3.3.21",
     "@apollo/react-hooks": "^4.0.0",
-    "@chakra-ui/icons": "^2.0.8",
-    "@chakra-ui/react": "^2.2.8",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@eth-optimism/sdk": "^1.0.0",
