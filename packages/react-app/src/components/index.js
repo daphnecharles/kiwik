@@ -22,16 +22,11 @@ export { default as NetworkDisplay } from "./NetworkDisplay";
 export { default as FaucetHint } from "./FaucetHint";
 export { default as NetworkSwitch } from "./NetworkSwitch";
 export { default as MultiAddressInput } from "./MultiAddressInput";
-<<<<<<< HEAD
 export { default as TokenSelect } from "./TokenSelect";
 export { default as PricingTiers } from "./PricingTiers";
-export { default as CreateProfile } from "./CreateProfile";
 export { default as AssetDetails } from "./AssetDetails";
 export { default as Navbar } from "./Navbar";
 export { default as CreatorProfile } from "./CreatorProfile";
 export { default as HomeScreen } from "./HomeScreen";
 export { default as SearchResults } from "./SearchResults";
 export { default as Discovery } from "./Discovery";
-=======
-export { default as TokenSelect } from "./TokenSelect";
->>>>>>> e32acd6f124b4c2ba6ec2c3a6e5adc54d54bb33f

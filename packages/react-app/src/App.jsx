@@ -35,16 +35,12 @@ import { Transactor, Web3ModalSetup } from "./helpers";
 import { Home, ExampleUI, Hints, Subgraph } from "./views";
 import { useStaticJsonRPC } from "./hooks";
 
-<<<<<<< HEAD
 
-const { ethers } = require("ethers");
-
-=======
 // import "./contracts/NftShop.sol";
 
 const { ethers, ContractFactory } = require("ethers");
 import { abi, bytecode } from "./helpers/NftMinter";
->>>>>>> e32acd6f124b4c2ba6ec2c3a6e5adc54d54bb33f
+
 /*
     Welcome to 🏗 scaffold-eth !
 
@@ -360,7 +356,6 @@ function App(props) {
 
         </Route>
         <Route path="/test">
-<<<<<<< HEAD
           <CreatorProfile/>
           
         </Route>
@@ -384,8 +379,6 @@ function App(props) {
         targetNetwork={targetNetwork}
         logoutOfWeb3Modal={logoutOfWeb3Modal}
         USE_NETWORK_SELECTOR={USE_NETWORK_SELECTOR}/>
-=======
->>>>>>> e32acd6f124b4c2ba6ec2c3a6e5adc54d54bb33f
         </Route>
 
         <Route path="/hints">

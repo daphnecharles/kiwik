@@ -5,12 +5,10 @@ import { BrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "./index.css";
-<<<<<<< HEAD
 import { ChakraProvider } from "@chakra-ui/react";
 import "./globals.css"
 import "./styleguide.css"
-=======
->>>>>>> e32acd6f124b4c2ba6ec2c3a6e5adc54d54bb33f
+
 
 const themes = {
   dark: `${process.env.PUBLIC_URL}/dark-theme.css`,
