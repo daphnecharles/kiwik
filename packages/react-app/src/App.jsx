@@ -350,6 +350,8 @@ function App(props) {
           />
 
         </Route>
+
+     
         <Route path="/">
           <HomeScreen {...homeScreenData} NETWORKCHECK={NETWORKCHECK}
         localChainId={localChainId}

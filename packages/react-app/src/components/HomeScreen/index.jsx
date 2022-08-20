@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { MontserratNormalGeyser16px, ManropeBoldBlack114px, MontserratBoldBlack204px } from "../../styledMixins";
 import "./HomeScreen.css";
 import NetworkDisplay from "../NetworkDisplay"
+import {OBJModel, GLTFModel, AmbientLight, DirectionLight} from 'react-3d-viewer'
 
 function HomeScreen(props) {
   const {
@@ -95,10 +96,25 @@ function HomeScreen(props) {
               <Vector3 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-3@2x.svg" />
             </OverlapGroup7>
             <OverlapGroup8>
+            
+            {/* <OBJModel src="https://bafybeicqgpqwpf3kdpngkzc5modcswibvmxetwz6ttmf7cvgroipewpsbu.ipfs.nftstorage.link/"
+                      rendererOptions={{alpha:true}}>
+              </OBJModel> */}
               <Group51>
-                <Image1 src={image1} />
+                  <GLTFModel width="700" height="320" src="https://raw.githubusercontent.com/dwqdaiwenqi/react-3d-viewer/master/site/src/lib/model/DamagedHelmet.gltf">
+                  <AmbientLight color={0xffffff} />
+                  <DirectionLight
+                    color={0xffffff}
+                    position={{ x: 100, y: 200, z: 100 }}
+                  />
+                  <DirectionLight
+                    color={0xff00ff}
+                    position={{ x: -100, y: 200, z: -100 }}
+                  />
+                </GLTFModel>
+                {/* <Image1 src={image1} /> */}
               </Group51>
-              <FantasyScenery>{fantasyScenery}</FantasyScenery>
+              <FantasyScenery>Damaged Helmet</FantasyScenery>
               <X3DAssetByShannonCase1>{x3DAssetByShannonCase3}</X3DAssetByShannonCase1>
               <Ellipse21 src={ellipse23} />
               <Vector21 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-2-3@2x.svg" />
