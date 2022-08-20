@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { MontserratNormalGeyser16px, ManropeBoldBlack114px, MontserratBoldBlack204px } from "../../styledMixins";
 import "./HomeScreen.css";
 import NetworkDisplay from "../NetworkDisplay"
+import Card from "../Card"
 
 function HomeScreen(props) {
   const {
@@ -73,24 +75,26 @@ function HomeScreen(props) {
             <DiscoverCollectA>{discoverCollectA}</DiscoverCollectA>
             <KIWIKIsTheWorlds>{kiwikIsTheWorlds}</KIWIKIsTheWorlds>
             <OverlapGroup4>
-              <Group5 style={{ backgroundImage: `url(${group51})` }}></Group5>
-              <Rectangle10></Rectangle10>
-              <Surname>{surname1}</Surname>
-              <X3DAssetByShannonCase>{x3DAssetByShannonCase1}</X3DAssetByShannonCase>
-              <Ellipse2 src={ellipse21} />
-              <Vector2 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-2@2x.svg" />
+            <Card
+            cartoonRocket="Cartoon Rocket"
+            rockets="#rockets"
+            profilePhoto="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/profile-photo@2x.png"
+            group5Props={cardData.group5Props}
+          />
             </OverlapGroup4>
             <OverlapGroup5>
-              <Group5 style={{ backgroundImage: `url(${group52})` }}></Group5>
-              <Rectangle10></Rectangle10>
-              <Surname>{surname2}</Surname>
-              <X3DAssetByShannonCase>{x3DAssetByShannonCase2}</X3DAssetByShannonCase>
-              <Ellipse2 src={ellipse22} />
-              <Vector2 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-2-1@2x.svg" />
+            <Card
+            cartoonRocket="Cartoon Rocket"
+            rockets="#rockets"
+            profilePhoto="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/profile-photo@2x.png"
+            group5Props={cardData.group5Props}
+          />
             </OverlapGroup5>
             <OverlapGroup7>
               <OverlapGroup1>
+              <Link to="/explore">
                 <Explore>{explore}</Explore>
+                </Link>
               </OverlapGroup1>
               <Vector3 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-3@2x.svg" />
             </OverlapGroup7>
@@ -107,13 +111,14 @@ function HomeScreen(props) {
           </OverlapGroup9>
           <TrendingNow>{trendingNow}</TrendingNow>
           <OverlapGroup6>
-            <Group5 style={{ backgroundImage: `url(${group53})` }}></Group5>
-            <Rectangle10></Rectangle10>
-            <Surname>{surname3}</Surname>
-            <X3DAssetByShannonCase>{x3DAssetByShannonCase4}</X3DAssetByShannonCase>
-            <Ellipse2 src={ellipse24} />
-            <Vector2 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-2-1@2x.svg" />
+            <Card
+            cartoonRocket="Cartoon Rocket"
+            rockets="#rockets"
+            profilePhoto="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/profile-photo@2x.png"
+            group5Props={cardData.group5Props}
+          />
           </OverlapGroup6>
+          
         </OverlapGroup10>
       </div>
     </div>
@@ -590,5 +595,13 @@ const ConnectWallet = styled.div`
   text-align: center;
   letter-spacing: 0;
 `;
+
+const group5Data = {
+  src: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/image-1-1@2x.png",
+};
+
+const cardData = {
+  group5Props: group5Data,
+};
 
 export default HomeScreen;

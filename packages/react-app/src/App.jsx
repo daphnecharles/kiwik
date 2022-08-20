@@ -25,7 +25,9 @@ import {
   PricingTiers,
   CreatorProfile,
   HomeScreen,
-  SearchResults
+  SearchResults,
+  Discovery,
+  ProfileDashboard
 } from "./components";
 import { NETWORKS, ALCHEMY_KEY } from "./constants";
 import externalContracts from "./contracts/external_contracts";
@@ -355,9 +357,17 @@ function App(props) {
           />
 
         </Route>
-        <Route path="/test">
-          <CreatorProfile/>
-          
+        <Route path="/explore">
+          <Discovery {...homeScreenData} NETWORKCHECK={NETWORKCHECK}
+        localChainId={localChainId}
+        selectedChainId={selectedChainId}
+        targetNetwork={targetNetwork}
+        logoutOfWeb3Modal={logoutOfWeb3Modal}
+        USE_NETWORK_SELECTOR={USE_NETWORK_SELECTOR}/>
+        </Route>
+
+        <Route path="/profile">
+          <ProfileDashboard {...profileDashboardData}/>
         </Route>
 
         <Route path="/">
@@ -372,13 +382,7 @@ function App(props) {
           <SearchResults />
         </Route>
 
-        <Route path="/discover">
-          <HomeScreen {...homeScreenData} NETWORKCHECK={NETWORKCHECK}
-        localChainId={localChainId}
-        selectedChainId={selectedChainId}
-        targetNetwork={targetNetwork}
-        logoutOfWeb3Modal={logoutOfWeb3Modal}
-        USE_NETWORK_SELECTOR={USE_NETWORK_SELECTOR}/>
+        <Route path="/explore-assets">
         </Route>
 
         <Route path="/hints">
@@ -546,4 +550,79 @@ const homeScreenData = {
   surname3: "Golden Dragon",
   x3DAssetByShannonCase4: "3D asset by Shannon Case",
   ellipse24: "https://bafkreiau7z5looui7rubbhfeo5k6udh54bkvl6t4332hdavgq53bxclpea.ipfs.nftstorage.link/",
+};
+
+const group51Data = {
+  src: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/image-1-1@2x.png",
+};
+
+const group52Data = {
+  src: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/image-1-2@2x.png",
+};
+
+const group53Data = {
+  src: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/image-1-3@2x.png",
+};
+
+const profileDashboardData = {
+  discover1: "Discover",
+  stats1: "Stats",
+  aboutUs1: "About us",
+  searchIcon: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6300fb88f5b4a343a48e0a7b/img/search-icon@2x.png",
+  search: "Search",
+  signOut: "Sign out",
+  cartoonRocket: "Cartoon Rocket",
+  name1: "Shannon Case",
+  includes3ModelsM1: "Includes 3 models. more lorem ipsum description of the asset can go in here up to two lines,....",
+  text4: "(3,333)",
+  price1: "$10",
+  rockets: "#rockets",
+  cartoon1: "#cartoon",
+  space1: "#space",
+  profilePhoto1: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/profile-photo@2x.png",
+  quickView: "QUICK VIEW",
+  addToCart1: "Add to cart",
+  alienDude: "Alien Dude",
+  name2: "Shannon Case",
+  includes3ModelsM2: "Includes 3 models. more lorem ipsum description of the asset can go in here up to two lines,....",
+  text2: "(3,333)",
+  price2: "$10",
+  alien: "#alien",
+  cartoon2: "#cartoon",
+  space2: "#space",
+  profilePhoto2: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/profile-photo@2x.png",
+  addToCart2: "Add to cart",
+  astronautOnTheMoon: "Astronaut on the moon",
+  name3: "Shannon Case",
+  includes3ModelsM3: "Includes 3 models. more lorem ipsum description of the asset can go in here up to two lines,....",
+  text3: "(3,333)",
+  price3: "$10",
+  astronaut: "#astronaut",
+  cartoon3: "#cartoon",
+  space3: "#space",
+  profilePhoto3: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/profile-photo@2x.png",
+  addToCart3: "Add to cart",
+  shannonsMostPopularAssets: "Shannon’s most popular assets",
+  youMightAlsoLike: "You might also like...",
+  lensProfile: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63015950b041066102c5131e/img/lens-profile@1x.png",
+  discover2: "Discover",
+  stats2: "Stats",
+  aboutUs2: "About us",
+  discover3: "Discover",
+  stats3: "Stats",
+  aboutUs3: "About us",
+  backToTop: "Back to top",
+  somethingAboutOurPitchGoesHere: "something about our pitch goes here",
+  ellipse71: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63015950b041066102c5131e/img/ellipse-7-1@2x.png",
+  mitchEger: "@mitch.eger",
+  designerCreatingSp: "Designer creating sports and fitness equipment and environments",
+  ellipse72: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63015950b041066102c5131e/img/ellipse-7-2@2x.png",
+  iheart_Robots99: "@iheart_robots99",
+  x3DArtistCreatingF: "3D artist creating fun and funky robots and the world’s around them.",
+  ellipse73: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63015950b041066102c5131e/img/ellipse-7-3@2x.png",
+  anakin_Skywalker: "@anakin_skywalker",
+  creatorOfPodRacer: "Creator of pod racers, hates sand and beaches.",
+  group51Props: group51Data,
+  group52Props: group52Data,
+  group53Props: group53Data,
 };

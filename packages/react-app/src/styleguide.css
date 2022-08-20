@@ -5,11 +5,15 @@
   --ui-medium: #182c35;
   --ui-pink: #ff006b;
   --ui-text: #cee2eb;
+  --black-pearl: #03131b99;
+  --blue-charcoal-2: #050c14;
+  --blue-dianne: #203e4a;
+  --botticelli: #cde3ec;
+  --cod-gray: #010a0e;
+  --cornflower: #95c5da;
+  --nile-blue: #1f3d4a;
+  --woodsmoke: #020a0f;
  
-  --font-size-l: 14px;
-  --font-size-m: 11.4px;
-  --font-size-xl: 16px;
-  --font-size-xxl: 20.4px;
   --font-size-xxxl: 25px;
   --font-size-xxxxl: 35px;
   --font-size-xxxxxl: 60px;
@@ -17,4 +21,13 @@
   --font-family-manrope: "Manrope", Helvetica;
   --font-family-montserrat: "Montserrat", Helvetica;
   --font-family-sf_pro-semibold: "SF Pro-Semibold", Helvetica;
+   
+    --font-size-l: 14px;
+    --font-size-m: 12px;
+    --font-size-xl: 16px;
+    --font-size-xxl: 18px;
+    --font-size-xxl2: 20.4px;
+    --font-size-xxl3: 20px;
+    --font-size-xxxxxl: 40px;
+   
 }

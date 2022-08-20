@@ -1,0 +1,8 @@
+.profile-dashboard {
+  align-items: flex-start;
+  background-color: var(--blue-charcoal);
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}

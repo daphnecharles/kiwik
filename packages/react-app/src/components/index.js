@@ -30,3 +30,6 @@ export { default as CreatorProfile } from "./CreatorProfile";
 export { default as HomeScreen } from "./HomeScreen";
 export { default as SearchResults } from "./SearchResults";
 export { default as Discovery } from "./Discovery";
+export { default as Card } from "./Card";
+export { default as Group5 } from "./Group5";
+export { default as ProfileDashboard } from "./ProfileDashboard";

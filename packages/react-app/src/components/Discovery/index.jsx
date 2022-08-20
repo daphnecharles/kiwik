@@ -46,7 +46,7 @@ function Discovery(props) {
     <div className="container-center-horizontal">
       <div className="home-screen screen">
         <OverlapGroup10>
-          <OverlapGroup9>
+          {/* <OverlapGroup9> */}
             <OverlapGroup>
               <Rectangle11 src={rectangle11} />
               <Rectangle12></Rectangle12>
@@ -67,20 +67,20 @@ function Discovery(props) {
         logoutOfWeb3Modal={logoutOfWeb3Modal}
         USE_NETWORK_SELECTOR={USE_NETWORK_SELECTOR}
       /> */}
-            <Discover>{discover}</Discover>
+            {/* <Discover>{discover}</Discover>
             <Stats>{stats}</Stats>
-            <AboutUs>{aboutUs}</AboutUs>
-            <DiscoverCollectA>{discoverCollectA}</DiscoverCollectA>
-            <KIWIKIsTheWorlds>{kiwikIsTheWorlds}</KIWIKIsTheWorlds>
-            <OverlapGroup4>
+            <AboutUs>{aboutUs}</AboutUs> */}
+            {/* <DiscoverCollectA>{discoverCollectA}</DiscoverCollectA>
+            <KIWIKIsTheWorlds>{kiwikIsTheWorlds}</KIWIKIsTheWorlds> */}
+            {/* <OverlapGroup4>
               <Group5 style={{ backgroundImage: `url(${group51})` }}></Group5>
               <Rectangle10></Rectangle10>
               <Surname>{surname1}</Surname>
               <X3DAssetByShannonCase>{x3DAssetByShannonCase1}</X3DAssetByShannonCase>
               <Ellipse2 src={ellipse21} />
               <Vector2 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-2@2x.svg" />
-            </OverlapGroup4>
-            <OverlapGroup5>
+            </OverlapGroup4> */}
+            {/* <OverlapGroup5>
               <Group5 style={{ backgroundImage: `url(${group52})` }}></Group5>
               <Rectangle10></Rectangle10>
               <Surname>{surname2}</Surname>
@@ -93,8 +93,8 @@ function Discovery(props) {
                 <Explore>{explore}</Explore>
               </OverlapGroup1>
               <Vector3 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-3@2x.svg" />
-            </OverlapGroup7>
-            <OverlapGroup8>
+            </OverlapGroup7> */}
+            {/* <OverlapGroup8>
               <Group51>
                 <Image1 src={image1} />
               </Group51>
@@ -102,9 +102,9 @@ function Discovery(props) {
               <X3DAssetByShannonCase1>{x3DAssetByShannonCase3}</X3DAssetByShannonCase1>
               <Ellipse21 src={ellipse23} />
               <Vector21 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-2-3@2x.svg" />
-            </OverlapGroup8>
-            <Group28 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/group-28@2x.svg" />
-          </OverlapGroup9>
+            </OverlapGroup8> */}
+            {/* <Group28 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/group-28@2x.svg" /> */}
+          {/* </OverlapGroup9> */}
           <TrendingNow>{trendingNow}</TrendingNow>
           <OverlapGroup6>
             <Group5 style={{ backgroundImage: `url(${group53})` }}></Group5>
