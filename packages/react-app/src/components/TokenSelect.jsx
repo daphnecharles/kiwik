@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { Select } from "antd";
 import { useState, useMemo, useEffect } from "react";
 import { ethers } from "ethers";

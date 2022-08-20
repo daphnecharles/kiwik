@@ -19,10 +19,10 @@ import {
   GasGauge,
   Header,
   Ramp,
-  ThemeSwitch,
   NetworkDisplay,
   FaucetHint,
   NetworkSwitch,
+  PricingTiers
 } from "./components";
 import { NETWORKS, ALCHEMY_KEY } from "./constants";
 import externalContracts from "./contracts/external_contracts";
@@ -329,6 +329,9 @@ function App(props) {
           />
 
         </Route>
+        <Route path="/test">
+          <PricingTiers /> 
+        </Route>
         <Route path="/hints">
           <Hints
             address={address}
@@ -375,7 +378,6 @@ function App(props) {
         </Route>
       </Switch>
 
-      <ThemeSwitch />
 
       {/* 👨‍💼 Your account is in the top right with a wallet at connect options */}
       <div style={{ position: "fixed", textAlign: "right", right: 0, top: 0, padding: 10 }}>
