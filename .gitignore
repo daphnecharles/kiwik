@@ -4,16 +4,16 @@ packages/subgraph/abis/*
 packages/hardhat/*.txt
 **/aws.json
 
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-**/node_modules
+# # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# **/node_modules
 
-packages/hardhat/artifacts*
-packages/hardhat/deployments
-packages/react-app/src/contracts/*
-!packages/react-app/src/contracts/external_contracts.js
-packages/hardhat/cache*
-packages/**/data
-!packages/react-app/src/contracts/contracts.js
+# packages/hadhat/artifacts*
+# rpackages/hardhat/deployments
+# packages/react-app/src/contracts/*
+# !packages/react-app/src/contracts/external_contracts.js
+# packages/hardhat/cache*
+# packages/**/data
+# !packages/react-app/src/contracts/contracts.js
 
 
 # ts
@@ -29,8 +29,8 @@ tenderly.yaml
 /.pnp
 .pnp.js
 
-# testing
-coverage
+# # testing
+# coverage
 
 # production
 build
