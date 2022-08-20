@@ -62,7 +62,7 @@ export default function Address(props) {
     return (
       <span style={{ verticalAlign: "middle" }}>
         <a
-          style={{ color: "#222222" }}
+          style={{ color: "white" }}
           target="_blank"
           href={etherscanLink}
           rel="noopener noreferrer"
@@ -82,7 +82,7 @@ export default function Address(props) {
         {props.onChange ? (
           <Text editable={{ onChange: props.onChange }} copyable={{ text: address }}>
             <a
-              style={{ color: "#222222" }}
+              style={{ color: "white" }}
               target="_blank"
               href={etherscanLink}
               rel="noopener noreferrer"
@@ -93,7 +93,7 @@ export default function Address(props) {
         ) : (
           <Text copyable={{ text: address }}>
             <a
-              style={{ color: "#222222" }}
+              style={{ color: "white" }}
               target="_blank"
               href={etherscanLink}
               rel="noopener noreferrer"

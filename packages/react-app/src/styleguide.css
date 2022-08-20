@@ -1,0 +1,20 @@
+:root { 
+  --black: #000000;
+  --blue-charcoal: #000c12;
+  --ui-dark: #03131b;
+  --ui-medium: #182c35;
+  --ui-pink: #ff006b;
+  --ui-text: #cee2eb;
+ 
+  --font-size-l: 14px;
+  --font-size-m: 11.4px;
+  --font-size-xl: 16px;
+  --font-size-xxl: 20.4px;
+  --font-size-xxxl: 25px;
+  --font-size-xxxxl: 35px;
+  --font-size-xxxxxl: 60px;
+ 
+  --font-family-manrope: "Manrope", Helvetica;
+  --font-family-montserrat: "Montserrat", Helvetica;
+  --font-family-sf_pro-semibold: "SF Pro-Semibold", Helvetica;
+}
