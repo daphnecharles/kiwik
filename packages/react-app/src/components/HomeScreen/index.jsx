@@ -101,8 +101,11 @@ function HomeScreen(props) {
                       rendererOptions={{alpha:true}}>
               </OBJModel> */}
               <Group51>
-                  <GLTFModel width="700" height="320" 
+                  {/* <GLTFModel width="700" height="320" 
                     src="https://bafkreigkiahwrikbdfuv42tyfiht2ukwloyiikbsbzq5duxafeyfrrpmai.ipfs.nftstorage.link/?filename=helmet.gltf"
+                    > */}
+                    <GLTFModel width="700" height="320" 
+                    src="https://ipfs.io/ipfs/bafkreigkiahwrikbdfuv42tyfiht2ukwloyiikbsbzq5duxafeyfrrpmai"
                     >
                   <AmbientLight color={0xffffff} />
                   <DirectionLight
