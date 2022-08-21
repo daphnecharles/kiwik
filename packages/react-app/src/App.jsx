@@ -27,7 +27,9 @@ import {
   HomeScreen,
   SearchResults,
   Discovery,
-  ProfileDashboard
+  ProfileDashboard,
+  ExploreScreenNotConnected,
+  HomeScreenCreateProfileModal
 } from "./components";
 import { NETWORKS, ALCHEMY_KEY } from "./constants";
 import externalContracts from "./contracts/external_contracts";
@@ -638,3 +640,153 @@ const profileDashboardData = {
   group52Props: group52Data,
   group53Props: group53Data,
 };
+
+const assetCard1Data = {
+  cartoonRocket: "Cartoon Rocket",
+  group5Props: group51Data,
+};
+
+const assetCard2Data = {
+  cartoonRocket: "Alien Dude",
+  className: "asset-card-1",
+  group5Props: group52Data,
+};
+
+
+const assetCard3Data = {
+  cartoonRocket: "Rocket Engines",
+  className: "asset-card-2",
+  group5Props: group53Data,
+};
+
+const group591Data = {
+  assetCard1Props: assetCard1Data,
+  assetCard2Props: assetCard2Data,
+  assetCard3Props: assetCard3Data,
+};
+
+const group54Data = {
+  src: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301ada3b6730c8252845980/img/image-1-17@2x.png",
+};
+
+const assetCard4Data = {
+  cartoonRocket: "Lightsabers",
+  group5Props: group54Data,
+};
+
+const group55Data = {
+  src: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301ada3b6730c8252845980/img/image-1-12@2x.png",
+};
+
+const assetCard5Data = {
+  cartoonRocket: "Space Shuttle",
+  className: "asset-card-4",
+  group5Props: group55Data,
+};
+
+const group56Data = {
+  src: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/image-1-3@2x.png",
+};
+
+const assetCard6Data = {
+  cartoonRocket: "Astronaut on the Moon",
+  className: "asset-card-5",
+  group5Props: group56Data,
+};
+
+const group592Data = {
+  className: "group-61",
+  assetCard1Props: assetCard4Data,
+  assetCard2Props: assetCard5Data,
+  assetCard3Props: assetCard6Data,
+};
+
+const group57Data = {
+  src: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301ada3b6730c8252845980/img/image-1-20@2x.png",
+};
+
+const assetCard7Data = {
+  cartoonRocket: "Octopus",
+  group5Props: group57Data,
+};
+
+const group58Data = {
+  src: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301ada3b6730c8252845980/img/image-1-13@2x.png",
+};
+
+const assetCard8Data = {
+  cartoonRocket: "Rockets",
+  className: "asset-card-6",
+  group5Props: group58Data,
+};
+
+const group510Data = {
+  src: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301ada3b6730c8252845980/img/image-1-22@2x.png",
+};
+
+const assetCard9Data = {
+  cartoonRocket: "Dragon",
+  className: "asset-card-7",
+  group5Props: group510Data,
+};
+
+const group593Data = {
+  className: "group-63",
+  assetCard1Props: assetCard7Data,
+  assetCard2Props: assetCard8Data,
+  assetCard3Props: assetCard9Data,
+};
+
+const exploreScreenNotConnectedData = {
+  ellipse3: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301578345395e6f680fac6f/img/ellipse-3@1x.png",
+  ellipse5: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301ada3b6730c8252845980/img/ellipse-5-4@1x.png",
+  ellipse4: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301578345395e6f680fac6f/img/ellipse-4@1x.png",
+  ellipse6: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/ellipse-6@1x.png",
+  forYou: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63018495b99a625a2af31884/img/for-you@1x.png",
+  latest: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63018495b99a625a2af31884/img/latest@1x.png",
+  trending: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63018495b99a625a2af31884/img/trending@1x.png",
+  header: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301578345395e6f680fac6f/img/header@1x.png",
+  vector3: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301578345395e6f680fac6f/img/vector-3@1x.png",
+  footer: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301578345395e6f680fac6f/img/footer@1x.png",
+  group591Props: group591Data,
+  group592Props: group592Data,
+  group593Props: group593Data,
+};
+
+
+const entry1Data = {
+    username: "Username",
+    name: "Shannon",
+};
+
+const entry2Data = {
+    username: "Profile Image URL",
+    name: "www.mylens.xyz",
+    className: "entry-1",
+};
+
+const profileCreationData = {
+    createAProfile: "Create a profile",
+    create: "Create",
+    entry1Props: entry1Data,
+    entry2Props: entry2Data,
+};
+
+const homeScreenCreateProfileModalData = {
+    discover1: "Discover",
+    stats1: "Stats",
+    aboutUs1: "About us",
+    iconSearch: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6300fb88f5b4a343a48e0a7b/img/search-icon@2x.png",
+    search: "Search",
+    connectWallet: "Connect Wallet",
+    discover2: "Discover",
+    stats2: "Stats",
+    aboutUs2: "About us",
+    discover3: "Discover",
+    stats3: "Stats",
+    aboutUs3: "About us",
+    backToTop: "Back to top",
+    somethingAboutOurPitchGoesHere: "something about our pitch goes here",
+    profileCreationProps: profileCreationData,
+};
+
