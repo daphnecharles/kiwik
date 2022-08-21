@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import {
   ManropeBoldGeyser109px,
   ManropeBoldGeyser201px,
@@ -102,11 +103,13 @@ function AssetDetailView(props) {
             <OverlapGroup6>
               <CartoonRocket>{cartoonRocket}</CartoonRocket>
               <Price>{price1}</Price>
-              <OverlapGroup3>
-                <Name>{name1}</Name>
-                <VerifiedBadge src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301ada3b6730c8252845980/img/verified-badge-9@2x.svg" />
-              </OverlapGroup3>
-              <Ellipse7 src={ellipse7} />
+              <Link to="/profile">
+                <OverlapGroup3>
+                  <Name>{name1}</Name>
+                  <VerifiedBadge src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301ada3b6730c8252845980/img/verified-badge-9@2x.svg" />
+                </OverlapGroup3>
+                <Ellipse7 src={ellipse7} />
+              </Link>
             </OverlapGroup6>
             <OverlapGroup5>
               <Text1>{text1}</Text1>
