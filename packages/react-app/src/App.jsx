@@ -397,8 +397,13 @@ function App(props) {
         </Route>
 
         <Route path="/checkout">
-          <CheckoutPagePayLater   backgroundElipsesProps={checkoutPagePayLaterData.backgroundElipsesProps}
+          <CheckoutPagePayLater   
+            backgroundElipsesProps={checkoutPagePayLaterData.backgroundElipsesProps}
             checkoutModalBuyWithCCProps={checkoutPagePayLaterData.checkoutModalBuyWithCCProps}
+            signer={userSigner} 
+            mainnetProvider={mainnetProvider}
+            localProvider={localProvider}
+            web3Modal={web3Modal}
           />
         </Route>
 
@@ -501,8 +506,13 @@ function App(props) {
           <FaucetHint localProvider={localProvider} targetNetwork={targetNetwork} address={address} />
         )}
       </div>
+<<<<<<< HEAD
       
       {/* <div>
+=======
+{/*       
+      <div>
+>>>>>>> c135fa8a55cdfdf12a0942a8c005bf004ddd8678
         <Button
             onClick={() => {
               mintNFT(userSigner, mainnetProvider);
