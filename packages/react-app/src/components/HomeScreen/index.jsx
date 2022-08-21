@@ -97,11 +97,13 @@ function HomeScreen(props) {
             </OverlapGroup7>
             <OverlapGroup8>
             
-            {/* <OBJModel src="https://bafybeicqgpqwpf3kdpngkzc5modcswibvmxetwz6ttmf7cvgroipewpsbu.ipfs.nftstorage.link/"
+            {/* <OBJModel src="https://bafkreid3vzbp7lnam4qyfdbb4pk6z6phiixuq3fhtisyb3pnughkwmvdoy.ipfs.nftstorage.link/"
                       rendererOptions={{alpha:true}}>
               </OBJModel> */}
               <Group51>
-                  <GLTFModel width="700" height="320" src="https://raw.githubusercontent.com/dwqdaiwenqi/react-3d-viewer/master/site/src/lib/model/DamagedHelmet.gltf">
+                  <GLTFModel width="700" height="320" 
+                    src="https://bafkreigkiahwrikbdfuv42tyfiht2ukwloyiikbsbzq5duxafeyfrrpmai.ipfs.nftstorage.link/?filename=helmet.gltf"
+                    >
                   <AmbientLight color={0xffffff} />
                   <DirectionLight
                     color={0xffffff}
