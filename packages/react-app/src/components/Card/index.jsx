@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Group5 from "../Group5";
 import styled from "styled-components";
+import { AssetDetailView } from "./";
+
 import {
   ManropeBoldGeyser16px,
   ManropeBoldBlueCharcoal12px,
@@ -52,14 +54,15 @@ function Card(props) {
         </StarContainer>
         <IconHeart src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/union@2x.svg" />
         <OverlapGroup4>
-          <Link to="/detailed">
-          <AddToCart>Buy Now</AddToCart>
+          <Link to="/detail">
+            <AddToCart>Buy Now</AddToCart>
           </Link>
         </OverlapGroup4>
       </OverlapGroup5>
     </Card1>
   );
 }
+
 
 const Card1 = styled.div`
   display: flex;
