@@ -36,3 +36,4 @@ export { default as Group43 } from "./Group43";
 export { default as HomeScreenCreateProfileModal } from "./HomeScreenCreateProfileModal";
 export { default as Entry } from "./Entry";
 export { default as ExploreScreenNotConnected } from "./ExploreScreenNotConnected";
+export { default as CheckoutPagePayLater } from "./CheckoutPagePayLater";

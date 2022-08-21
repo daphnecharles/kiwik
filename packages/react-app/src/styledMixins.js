@@ -430,3 +430,16 @@ export const Border06pxNileBlue = css`
   border: 0.6px solid var(--nile-blue);
 `;
 
+
+export const MontserratMediumGeyser14px = css`
+  color: var(--ui-text);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  font-style: normal;
+`;
+
+export const Border12pxUiText = css`
+  border: 1.2px solid var(--ui-text);
+`;
+

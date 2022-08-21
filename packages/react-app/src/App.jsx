@@ -30,7 +30,8 @@ import {
   ProfileDashboard,
   ExploreScreenNotConnected,
   HomeScreenCreateProfileModal,
-  AssetDetailView
+  AssetDetailView,
+  CheckoutPagePayLater
 } from "./components";
 import { NETWORKS, ALCHEMY_KEY } from "./constants";
 import externalContracts from "./contracts/external_contracts";
@@ -382,6 +383,13 @@ function App(props) {
           <AssetDetailView {...assetDetailViewData}/>
         </Route>
 
+        <Route path="/checkout">
+          <CheckoutPagePayLater   backgroundElipsesProps={checkoutPagePayLaterData.backgroundElipsesProps}
+            checkoutModalBuyWithCCProps={checkoutPagePayLaterData.checkoutModalBuyWithCCProps}
+          />
+        </Route>
+
+
         <Route path="/purchase-asset">
         </Route>
         <Route path="/exampleui">
@@ -555,18 +563,18 @@ const homeScreenData = {
   surname1: "Golden Dragon",
   x3DAssetByShannonCase1: "3D asset by Shannon Case",
   ellipse21: "https://bafkreiau7z5looui7rubbhfeo5k6udh54bkvl6t4332hdavgq53bxclpea.ipfs.nftstorage.link/",
-  group52: "https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/image-1-1@1x.png",
+  group52: "https://bafybeid4lfshw2ojf2swmsyippphm27p75kqvbm4msugidnsv77iwubvsu.ipfs.nftstorage.link/",
   surname2: "Golden Dragon",
   x3DAssetByShannonCase2: "3D asset by Shannon Case",
   ellipse22: "https://bafkreiau7z5looui7rubbhfeo5k6udh54bkvl6t4332hdavgq53bxclpea.ipfs.nftstorage.link/",
   explore: "Explore",
   image1: "https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/image-1-3@1x.png",
-  fantasyScenery: "Male Chatracter",
+  fantasyScenery: "Male Character",
   x3DAssetByShannonCase3: "3D asset by Shannon Case",
   ellipse23: "https://bafkreiau7z5looui7rubbhfeo5k6udh54bkvl6t4332hdavgq53bxclpea.ipfs.nftstorage.link/",
   trendingNow: "Trending Now",
-  group53: "https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/image-1-2@1x.png",
-  surname3: "Golden Dragon",
+  group53: "https://bafybeifiwv5xjzuxjbkqhhyxydte45aih4btrq3cmkgy2ojrc3ucl2d5vy.ipfs.nftstorage.link/",
+  surname3: "Trex Dinosaur",
   x3DAssetByShannonCase4: "3D asset by Shannon Case",
   ellipse24: "https://bafkreiau7z5looui7rubbhfeo5k6udh54bkvl6t4332hdavgq53bxclpea.ipfs.nftstorage.link/",
   quickView: "QUICK VIEW",
@@ -861,8 +869,8 @@ const assetDetailViewData = {
   ellipse4: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301578345395e6f680fac6f/img/ellipse-4@1x.png",
   ellipse6: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/ellipse-6@1x.png",
   ellipse32: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/ellipse-3-1@1x.png",
-  cartoonRocket: "Cartoon Rocket",
-  price1: "$10",
+  cartoonRocket: "Male Character",
+  price1: "1 $MATIC",
   name1: "Shannon Case",
   ellipse7: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/ellipse-7@2x.png",
   text1: "(3,333)",
@@ -919,3 +927,56 @@ const assetDetailViewData = {
   price4: "$33",
   view3: "View",
 };
+
+const backgroundElipsesData = {
+  ellipse31: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63020a52db74deeef949820c/img/ellipse-3@1x.png",
+  ellipse5: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63020a52db74deeef949820c/img/ellipse-5@1x.png",
+  ellipse4: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63020a52db74deeef949820c/img/ellipse-4@1x.png",
+  ellipse6: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63020a52db74deeef949820c/img/ellipse-6@1x.png",
+  ellipse32: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63020a52db74deeef949820c/img/ellipse-3-1@1x.png",
+};
+
+const paymentDropDownData = {
+  buyNowPayLater: "Buy now, pay later",
+};
+
+const checkoutModalBuyWithCCData = {
+  checkout: "Checkout",
+  orderSummary: "Order Summary",
+  image11: "https://bafkreihimko6m76dq4vabvd4zgyw6pvindur3ydc54mllz4ghugo7jravu.ipfs.nftstorage.link/",
+  cartoonRockets1: "Male Character",
+  byShannonCase1: "By Shannon Case",
+  price1: "1 $KIWIK",
+  image12: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/630173e945395e6f680facca/img/image-1-16@2x.png",
+  cartoonRockets2: "Cartoon Rockets",
+  byShannonCase2: "By Shannon Case",
+  price2: "2 $KIWIK",
+  image13: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/630173e945395e6f680facca/img/image-1-16@2x.png",
+  cartoonRockets3: "Cartoon Rockets",
+  byShannonCase3: "By Shannon Case",
+  price3: "2 $KIWIK",
+  paymentDetails: "Payment Details",
+  completeYourPurcha: "Complete your purchase by providing your payment details.",
+  emailAddress: "Email Address",
+  shannonACaseGmailCom: "shannon.a.case@gmail.com",
+  payIn4: "Pay in 4",
+  payOver6Weeks: "Pay over 6 weeks",
+  price4: "$25",
+  price5: "$25",
+  price6: "$25",
+  price7: "$25",
+  today: "Today",
+  week2: "Week 2",
+  week4: "Week 4",
+  week6: "Week 6",
+  buyNowPayIn4PaymentsNoInterest: <React.Fragment>Buy Now. Pay in 4 payments.<br />No Interest</React.Fragment>,
+  howItWorks: "How it works",
+  xcontinue: "Continue",
+  paymentDropDownProps: paymentDropDownData,
+};
+
+const checkoutPagePayLaterData = {
+  backgroundElipsesProps: backgroundElipsesData,
+  checkoutModalBuyWithCCProps: checkoutModalBuyWithCCData,
+};
+
