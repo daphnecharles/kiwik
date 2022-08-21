@@ -17,7 +17,8 @@ import {
   ValignTextMiddle,
 } from "../../styledMixins";
 import { Framework } from "@superfluid-finance/sdk-core";
-import { ethers } from "ethers";
+import { ethers , ContractFactory} from "ethers";
+import { abi, bytecode } from "../../helpers/NftMinter";
 
 function CheckoutModalBuyWithCC(props) {
   const {
@@ -144,13 +145,12 @@ function CheckoutModalBuyWithCC(props) {
             </OverlapGroup7>
           </PayIn4>
           <Link
-             onClick={() => {
-              createNewFlow(signer, localProvider, "", 25);
-              // mintNFT(signer, modal);
+             onClick={async () => {
+               createNewFlow(signer, localProvider, "", 25);
             }}
             >
             <OverlapGroup6>
-              <Continue>{xcontinue}</Continue>
+              <Continue>Mint NFT</Continue>
             </OverlapGroup6>
           </Link>
         </FlexCol2>
@@ -163,14 +163,14 @@ const NETWORK_NAME = "mumbai";
 const SUPER_TOKEN_NAME = "MATICx";
 const CHAIN_ID = 80001;
 
-async function createNewFlow(userSigner, web3Modal, recipient, flowRate) {
+async function createNewFlow(userSigner, provider, recipient, flowRate) {
   const senderAddress =  await userSigner.getAddress();
-  recipient = "0xA6CE7eB08A19Ed0331410b45866E7F71D9BB1f0b";
+  const recipientV2 = "0xA6CE7eB08A19Ed0331410b45866E7F71D9BB1f0b";
 
   const sf = await Framework.create({
     chainId: CHAIN_ID,
     networkName: NETWORK_NAME,
-    provider: await web3Modal
+    provider: await provider
   });
 
   const signer = sf.createSigner({ signer: userSigner });
@@ -181,10 +181,10 @@ async function createNewFlow(userSigner, web3Modal, recipient, flowRate) {
 
   const createFlowOperation = tokenxContract.createFlow({
       sender: senderAddress,
-      receiver: recipient,
+      receiver: recipientV2,
       flowRate: flowRateSecond,
       overrides: {
-        gasLimit: "100000000",
+        gasLimit: "1000000",
       },
   });
 
@@ -195,14 +195,16 @@ console.log(
     `Congrats - you've just successfully executed a batch call!
     You have completed 2 operations in a single tx 🤯
     View the tx here:  https://polygonscan.com/tx/${result.hash}
-    View Your Stream At: https://app.superfluid.finance/dashboard/${RECIPIENT}
+    View Your Stream At: https://app.superfluid.finance/dashboard/${recipientV2}
     Network: ${NETWORK_NAME}
     Super Token: ${SUPER_TOKEN_NAME}
     Sender: ${senderAddress}
-    Receiver: ${recipient},
+    Receiver: ${recipientV2},
     FlowRate: ${flowRate}/month
     `
   );
+
+  mintNFT(userSigner, provider);
 }
 
 function calculateFlowRate(amountInDollars) {
@@ -223,8 +225,8 @@ async function mintNFT(userSigner, localProvider) {
   // Variables
   const name = "Example NFT"
   const uri = "bafybeicqgpqwpf3kdpngkzc5modcswibvmxetwz6ttmf7cvgroipewpsbu"
-  const weiValue = ethers.BigNumber.from('100000000')
-  const cost = ethers.utils.formatEther(weiValue)
+  // const weiValue = ethers.BigNumber.ƒfrom('100000000')
+  const cost = 1000000 // ethers.utils.formatEther(weiValue)
   const maxMintAmount = 0
   const mintCapped = false
   

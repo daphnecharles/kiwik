@@ -1,5 +1,5 @@
 import { Framework } from "@superfluid-finance/sdk-core";
-import { ethers } from "ethers";
+import { ethers, ContractFactory } from "ethers";
 import { store } from "../store";
 import { getDate } from './helpers';
 const ERC20ABI = require('./abi.json');
