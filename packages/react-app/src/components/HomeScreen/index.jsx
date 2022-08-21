@@ -100,8 +100,25 @@ function HomeScreen(props) {
               <Vector3 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-3@2x.svg" />
             </OverlapGroup7>
             <OverlapGroup8>
-              <Group51>
-                <Image1 src={image1} />
+              <Group51 >
+                <GLTFModel
+                  src={
+                    "https://ipfs.io/ipfs/bafybeibb7psrr326hvv3thstwmghin5pgwnwtpy5xgbn6jzp2oqdy2nlzy?filename=man.glb"
+                  }
+                  width="550"
+                  height="325"
+                  position={{x:0,y:-1,z:0}}
+                >
+                  <DirectionLight
+                    color={0xffffff}
+                    position={{ x: 100, y: 200, z: 100 }}
+                  />
+                  <DirectionLight
+                    color={0xff00ff}
+                    position={{ x: -100, y: 200, z: -100 }} 
+                  />
+                </GLTFModel>
+                {/* <Image1 src={image1} /> */}
               </Group51>
               <FantasyScenery>{fantasyScenery}</FantasyScenery>
               <X3DAssetByShannonCase1>{x3DAssetByShannonCase3}</X3DAssetByShannonCase1>
