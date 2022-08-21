@@ -1,0 +1,10 @@
+.home-screen-create-profile-modal {
+  align-items: flex-start;
+  background-color: var(--blue-charcoal);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+

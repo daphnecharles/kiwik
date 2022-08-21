@@ -94,7 +94,9 @@ function HomeScreen(props) {
             <OverlapGroup7>
             <Link to="/explore">
               <OverlapGroup1>
+              
                 <Explore>{explore}</Explore>
+            
               </OverlapGroup1>
               </Link>
               <Vector3 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-3@2x.svg" />
@@ -613,6 +615,7 @@ const ConnectWallet = styled.div`
   text-align: center;
   letter-spacing: 0;
 `;
+
 
 const group5Data = {
   src: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/image-1-1@2x.png",

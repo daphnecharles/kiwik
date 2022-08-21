@@ -20,7 +20,7 @@ const Group51 = styled.div`
   display: flex;
   align-items: flex-start;
   min-width: 446px;
-  background-color: var(--ui-text);
+  background-color: var(--ui-dark);
   border-radius: 16.33px;
 `;
 
