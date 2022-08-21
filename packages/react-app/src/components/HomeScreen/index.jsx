@@ -5,6 +5,7 @@ import { MontserratNormalGeyser16px, ManropeBoldBlack114px, MontserratBoldBlack2
 import "./HomeScreen.css";
 import NetworkDisplay from "../NetworkDisplay"
 import Card from "../Card"
+import { GLTFModel, AmbientLight, DirectionLight } from "react-3d-viewer";
 
 function HomeScreen(props) {
   const {
@@ -603,5 +604,7 @@ const group5Data = {
 const cardData = {
   group5Props: group5Data,
 };
+
+
 
 export default HomeScreen;
