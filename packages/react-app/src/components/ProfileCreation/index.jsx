@@ -6,7 +6,7 @@ import { WorldIDWidget } from "@worldcoin/id";
 
 
 function ProfileCreation(props) {
-  const { createAProfile, create, entry1Props, entry2Props } = props;
+  const { createAProfile, create, entry1Props, entry2Props, setUserHandle, setProfileURI } = props;
 
   const widgetProps = {
     actionId: "wid_staging_f4660cc961a916c56af9cf3ef63ab70b",
@@ -27,8 +27,8 @@ function ProfileCreation(props) {
       <FlexCol>
         <Title style={{color: "white"}}>Create your Creator Profile</Title>
         <p style={{color:'white', textAlign: "left"}}>Create your profile on Lens Protocol and verify your identity with Worldcoin</p>
-        <Entry username={entry1Props.username} name={entry1Props.name} />
-        <Entry username={entry2Props.username} name={entry2Props.name} className={entry2Props.className} />
+        <Entry username={entry1Props.username} name={entry1Props.name} setUserHandle={setUserHandle}/>
+        <Entry username={entry2Props.username} name={entry2Props.name} className={entry2Props.className} setProfileURI={setProfileURI}/>
         <a  href="https://human.withlens.app/"><WorldIDWidget 
   {...widgetProps}
 /></a>

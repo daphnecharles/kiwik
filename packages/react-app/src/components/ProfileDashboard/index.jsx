@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Route, Switch, useLocation } from "react-router-dom";
 import Group5 from "../Group5";
 import styled from "styled-components";
 import {
@@ -97,7 +98,7 @@ function ProfileDashboard(props) {
           <Vector3 src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63010f0345395e6f680fab6c/img/vector-3@2x.svg" />
           <Header>
             <OverlapGroup2>
-              <Group28 src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63015950b041066102c5131e/img/group-28-1@2x.svg" />
+              <Link to="/"><Group28 src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63015950b041066102c5131e/img/group-28-1@2x.svg" /></Link>
               <Discover>{discover1}</Discover>
               <Stats>{stats1}</Stats>
               <AboutUs>{aboutUs1}</AboutUs>

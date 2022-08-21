@@ -22,6 +22,7 @@ const Group51 = styled.div`
   min-width: 446px;
   background-color: var(--ui-dark);
   border-radius: 16.33px;
+  color: white;
 `;
 
 const Image1 = styled.img`

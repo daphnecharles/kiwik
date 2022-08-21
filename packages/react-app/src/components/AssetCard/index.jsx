@@ -86,6 +86,7 @@ const AssetCard1 = styled.div`
   display: flex;
   align-items: flex-start;
   box-shadow: 0px 4px 25px #00000040;
+  color: white;
 
   &.asset-card.asset-card-1 {
     margin-left: 83px;

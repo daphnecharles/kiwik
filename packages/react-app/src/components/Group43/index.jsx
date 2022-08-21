@@ -20,7 +20,7 @@ function Group43(props) {
     <Group431>
       <OverlapGroup7>
         <Group5 src={group51Props.src} />
-        <CartoonRocket>Cartoon Rocket</CartoonRocket>
+        <CartoonRocket style={{color:'white'}}>Cartoon Rocket</CartoonRocket>
         <Name>Shannon Case</Name>
         <Includes3ModelsM>
           Includes 3 models. more lorem ipsum description of the asset can go in here up to two lines,....
@@ -131,6 +131,7 @@ const Group431 = styled.div`
   display: flex;
   align-items: flex-start;
   min-width: 1538px;
+  color: white;
 `;
 
 const OverlapGroup7 = styled.div`

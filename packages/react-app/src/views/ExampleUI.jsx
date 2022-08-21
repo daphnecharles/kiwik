@@ -89,9 +89,7 @@ export default function ExampleUI({
           <Ellipse4></Ellipse4>
           <OverlapGroup2>
             <Group28 src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/group-28@2x.svg" />
-            <Discover>{discover1}</Discover>
-            <Stats>{stats1}</Stats>
-            <AboutUs>{aboutUs1}</AboutUs>
+          
             <SearchContainer>
               <IconSearch src={iconSearch} />
               <Search>{search}</Search>
@@ -146,11 +144,6 @@ export default function ExampleUI({
           <OverlapGroup3>
             <FlexRow>
               <Logo src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63010f0345395e6f680fab6c/img/logo@2x.svg" />
-              <FlexCol>
-                <Discover1>{discover2}</Discover1>
-                <Stats1>{stats2}</Stats1>
-                <AboutUs1>{aboutUs2}</AboutUs1>
-              </FlexCol>
               <FlexCol1>
                 <Discover1>{discover3}</Discover1>
                 <Stats1>{stats3}</Stats1>
@@ -174,7 +167,7 @@ export default function ExampleUI({
 
 const ProfileCreation1 = styled.div`
   position: absolute;
-  height: 600px;
+  height: 650px;
   top: 432px;
   left: 1252px;
   display: flex;
@@ -241,7 +234,7 @@ const IconClose = styled.img`
 
 const OverlapGroup4 = styled.div`
   width: 3025px;
-  height: 2130px;
+  height: 1130px;
   position: relative;
   margin-top: -275px;
   margin-left: -659px;
@@ -374,7 +367,7 @@ const ConnectWallet = styled.div`
 `;
 
 const OverlapGroup5 = styled.div`
-  width: 1744px;
+  width: 100%;
   height: 316px;
   position: relative;
   margin-top: 140px;
@@ -382,7 +375,7 @@ const OverlapGroup5 = styled.div`
 
 const OverlapGroup3 = styled.div`
   position: absolute;
-  width: 1728px;
+  width: 100%;
   top: 0;
   left: 0;
   display: flex;

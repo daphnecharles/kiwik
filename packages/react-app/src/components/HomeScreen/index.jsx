@@ -92,13 +92,19 @@ function HomeScreen(props) {
           />
             </OverlapGroup5>
             <OverlapGroup7>
+            <Link to="/profile-creation">
+            <Rectangle91>Become a KIWIK Creator</Rectangle91> 
+            </Link>
             <Link to="/explore">
               <OverlapGroup1>
               
                 <Explore>{explore}</Explore>
             
               </OverlapGroup1>
+              
               </Link>
+
+              
               <Vector3 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-3@2x.svg" />
             </OverlapGroup7>
             <OverlapGroup8>
@@ -129,10 +135,11 @@ function HomeScreen(props) {
                 <Vector21 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-2-3@2x.svg" />
               </Link>
             </OverlapGroup8>
-            <Group28 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/group-28@2x.svg" />
+            
+            <Link to="/"><Group28 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/group-28@2x.svg" /></Link>
           </OverlapGroup9>
           <TrendingNow>{trendingNow}</TrendingNow>
-          <OverlapGroup6>
+          <OverlapGroup6 style={{color: "white"}}>
             <Card
             cartoonRocket="Cartoon Rocket"
             rockets="#rockets"
@@ -149,7 +156,7 @@ function HomeScreen(props) {
 
 const OverlapGroup10 = styled.div`
   width: 2841px;
-  height: 2881px;
+  height: 2081px;
   position: relative;
   margin-left: -652px;
 `;
@@ -627,6 +634,23 @@ const cardData = {
   group5Props: group5Data,
 };
 
+
+const Rectangle91 = styled.button`
+cursor: pointer;
+font-family: var(--font-family-sf_pro-semibold);
+  font-weight: 400;
+  color: var(--ui-text);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+position: absolute;
+  width: 310px;
+  height: 66px;
+  background-color: var(--ui-dark);
+  border-radius: 60px;
+  top: 0px;
+  left: 350px;
+`;
 
 
 export default HomeScreen;

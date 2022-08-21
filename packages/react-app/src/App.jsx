@@ -375,7 +375,20 @@ function App(props) {
         </Route>
 
         <Route path="/profile-creation">
-        <HomeScreenCreateProfileModal {...homeScreenCreateProfileModalData} />
+        <ExampleUI
+            address={address}
+            userSigner={userSigner}
+            mainnetProvider={mainnetProvider}
+            localProvider={localProvider}
+            yourLocalBalance={yourLocalBalance}
+            price={price}
+            tx={tx}
+            writeContracts={writeContracts}
+            readContracts={readContracts}
+            purpose={purpose}
+            blockExplorer={blockExplorer}
+            {...homeScreenCreateProfileModalData}
+          />
         </Route>
 
         <Route exact path="/detail">
@@ -489,7 +502,7 @@ function App(props) {
         )}
       </div>
       
-      <div>
+      {/* <div>
         <Button
             onClick={() => {
               mintNFT(userSigner, mainnetProvider);
@@ -502,7 +515,7 @@ function App(props) {
             </span>
             Mint NFT!!
           </Button>
-      </div>
+      </div> */}
 
       {/* 🗺 Extra UI like gas price, eth price, faucet, and support: */}
       <div style={{ position: "fixed", textAlign: "left", left: 0, bottom: 20, padding: 10 }}>

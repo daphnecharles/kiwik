@@ -23,15 +23,15 @@ function Card(props) {
     <Card1>
       <OverlapGroup5>
         <Group5 src={group5Props.src} />    
-        <CartoonRocket>{cartoonRocket}</CartoonRocket>
+        <CartoonRocket style={{color: 'white'}}>{cartoonRocket}</CartoonRocket>
         <Link to="/profile">
-           <Name>Shannon Case</Name>
+           <Name style={{color: 'white'}}>Shannon Case</Name>
         </Link>
-        <Includes3ModelsM>
+        <Includes3ModelsM style={{color: 'white'}}>
           Includes a low-poly male character.
         </Includes3ModelsM>
-        <Text1>(3,333)</Text1>
-        <Price>$10</Price>
+        <Text1 style={{color: 'white'}}>(3,333)</Text1>
+        <Price style={{color: 'white'}}>$10</Price>
         <OverlapGroup>
           <Rockets>{rockets}</Rockets>
         </OverlapGroup>
@@ -69,6 +69,7 @@ const Card1 = styled.div`
   align-items: flex-start;
   min-width: 446px;
   box-shadow: 0px 4px 25px #00000040;
+  color: white;
 `;
 
 const Rectangle22 = styled.div`

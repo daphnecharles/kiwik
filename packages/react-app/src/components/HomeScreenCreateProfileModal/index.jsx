@@ -28,6 +28,8 @@ function HomeScreenCreateProfileModal(props) {
     backToTop,
     somethingAboutOurPitchGoesHere,
     profileCreationProps,
+    setProfileURI,
+    setUserHandle
   } = props;
 
   return (
@@ -52,6 +54,8 @@ function HomeScreenCreateProfileModal(props) {
             create={profileCreationProps.create}
             entry1Props={profileCreationProps.entry1Props}
             entry2Props={profileCreationProps.entry2Props}
+            setProfileURI={setProfileURI}
+            setUserHandle={setUserHandle}
           />
         </OverlapGroup4>
         <OverlapGroup5>
@@ -81,7 +85,7 @@ function HomeScreenCreateProfileModal(props) {
 
 const OverlapGroup4 = styled.div`
   width: 3025px;
-  height: 2130px;
+  height: 1130px;
   position: relative;
   margin-top: -275px;
   margin-left: -659px;
