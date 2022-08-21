@@ -6,15 +6,10 @@ packages/hardhat/*.txt
 
 # # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 **/node_modules
-
-# packages/hadhat/artifacts*
-# packages/hardhat/deployments
-# packages/react-app/src/contracts/*
-# !packages/react-app/src/contracts/external_contracts.js
-# packages/hardhat/cache*
-# packages/**/data
-# !packages/react-app/src/contracts/contracts.js
-
+node_modules
+packages/subgraph/node_modules
+packages/hardhat/node_modules
+packages/react-app/node_modules
 
 # ts
 packages/hardhat-ts/cache

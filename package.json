@@ -67,12 +67,7 @@
       "**/hardhat-ts/**"
     ]
   },
-  "dependencies": {
-    "@chakra-ui/react": "^2.2.8",
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
-    "framer-motion": "^7.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "husky": "^7.0.2"
   }
