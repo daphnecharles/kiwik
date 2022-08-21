@@ -28,7 +28,7 @@ function Card(props) {
            <Name>Shannon Case</Name>
         </Link>
         <Includes3ModelsM>
-          Includes 3 models. more lorem ipsum description of the asset can go in here up to two lines,....
+          Includes a low-poly male character.
         </Includes3ModelsM>
         <Text1>(3,333)</Text1>
         <Price>$10</Price>

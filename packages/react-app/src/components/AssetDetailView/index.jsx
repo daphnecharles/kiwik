@@ -19,6 +19,7 @@ import {
   ValignTextMiddle,
 } from "../../styledMixins";
 import "./AssetDetailView.css";
+import {OBJModel, GLTFModel, AmbientLight, DirectionLight} from 'react-3d-viewer'
 
 function AssetDetailView(props) {
   const {
@@ -111,10 +112,24 @@ function AssetDetailView(props) {
                 <Ellipse7 src={ellipse7} />
               </Link>
             </OverlapGroup6>
-            <OverlapGroup5>
+            <OverlapGroup6>
               <Text1>{text1}</Text1>
-              <ImagePreview>
-                <Image1 src={image11} />
+                <GLTFModel width="410" height="300" 
+                    src={
+                      "https://ipfs.io/ipfs/bafybeibb7psrr326hvv3thstwmghin5pgwnwtpy5xgbn6jzp2oqdy2nlzy?filename=man.glb"
+                    }
+                    position={{x:0,y:-1,z:0}}
+                  >
+                  <AmbientLight color={0xffffff} />
+                  <DirectionLight
+                    color={0xffffff}
+                    position={{ x: 100, y: 200, z: 100 }}
+                  />
+                  <DirectionLight
+                    color={0xff00ff}
+                    position={{ x: -100, y: 200, z: -100 }}
+                  />
+                </GLTFModel>
                 <ImageContainer>
                   <Image2 src={image2} />
                   <Image3 src={image3} />
@@ -122,7 +137,8 @@ function AssetDetailView(props) {
                   <Image5 src={image5} />
                   <Image5 src={image6} />
                 </ImageContainer>
-              </ImagePreview>
+              </OverlapGroup6>
+              <OverlapGroup5>
               <StarContainer>
                 <IconStar src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/star-1@2x.svg" />
                 <IconStar1 src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/star-2@2x.svg" />

@@ -120,10 +120,12 @@ function HomeScreen(props) {
                 </GLTFModel>
                 {/* <Image1 src={image1} /> */}
               </Group51>
-              <FantasyScenery>{fantasyScenery}</FantasyScenery>
-              <X3DAssetByShannonCase1>{x3DAssetByShannonCase3}</X3DAssetByShannonCase1>
-              <Ellipse21 src={ellipse23} />
-              <Vector21 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-2-3@2x.svg" />
+              <Link to="/detail">
+                <FantasyScenery>{fantasyScenery}</FantasyScenery>
+                <X3DAssetByShannonCase1>{x3DAssetByShannonCase3}</X3DAssetByShannonCase1>
+                <Ellipse21 src={ellipse23} />
+                <Vector21 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-2-3@2x.svg" />
+              </Link>
             </OverlapGroup8>
             <Group28 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/group-28@2x.svg" />
           </OverlapGroup9>
