@@ -384,8 +384,13 @@ function App(props) {
         </Route>
 
         <Route path="/checkout">
-          <CheckoutPagePayLater   backgroundElipsesProps={checkoutPagePayLaterData.backgroundElipsesProps}
+          <CheckoutPagePayLater   
+            backgroundElipsesProps={checkoutPagePayLaterData.backgroundElipsesProps}
             checkoutModalBuyWithCCProps={checkoutPagePayLaterData.checkoutModalBuyWithCCProps}
+            signer={userSigner} 
+            mainnetProvider={mainnetProvider}
+            localProvider={localProvider}
+            web3Modal={web3Modal}
           />
         </Route>
 
@@ -488,7 +493,7 @@ function App(props) {
           <FaucetHint localProvider={localProvider} targetNetwork={targetNetwork} address={address} />
         )}
       </div>
-      
+{/*       
       <div>
         <Button
             onClick={() => {
@@ -502,7 +507,7 @@ function App(props) {
             </span>
             Mint NFT!!
           </Button>
-      </div>
+      </div> */}
 
       {/* 🗺 Extra UI like gas price, eth price, faucet, and support: */}
       <div style={{ position: "fixed", textAlign: "left", left: 0, bottom: 20, padding: 10 }}>

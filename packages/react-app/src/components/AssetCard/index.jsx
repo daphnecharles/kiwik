@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Route, Switch, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Group5 from "../Group5";
 import styled from "styled-components";
 import {

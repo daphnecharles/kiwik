@@ -6,7 +6,9 @@ import styled from "styled-components";
 import "./CheckoutPagePayLater.css";
 
 function CheckoutPagePayLater(props) {
-  const { backgroundElipsesProps, checkoutModalBuyWithCCProps } = props;
+  const { backgroundElipsesProps, checkoutModalBuyWithCCProps, signer, mainnetProvider, localProvider, web3Modal } = props;
+
+  const newcheckoutModalBuyWithCCProps = {...checkoutModalBuyWithCCProps, signer, mainnetProvider, localProvider, web3Modal}
 
   return (
     <div className="container-center-horizontal">
@@ -19,7 +21,7 @@ function CheckoutPagePayLater(props) {
             ellipse6={backgroundElipsesProps.ellipse6}
             ellipse32={backgroundElipsesProps.ellipse32}
           />
-          <CheckoutModalBuyWithCC {...checkoutModalBuyWithCCProps} />
+          <CheckoutModalBuyWithCC {...newcheckoutModalBuyWithCCProps} />
           <Header />
         </OverlapGroup10>
       </div>
