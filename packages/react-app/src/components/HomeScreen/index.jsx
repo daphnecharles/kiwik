@@ -92,11 +92,11 @@ function HomeScreen(props) {
           />
             </OverlapGroup5>
             <OverlapGroup7>
+            <Link to="/explore">
               <OverlapGroup1>
-              <Link to="/explore">
                 <Explore>{explore}</Explore>
-                </Link>
               </OverlapGroup1>
+              </Link>
               <Vector3 src="https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/vector-3@2x.svg" />
             </OverlapGroup7>
             <OverlapGroup8>

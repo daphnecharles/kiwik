@@ -151,3 +151,83 @@ export const Border05pxNileBlue = css`
   border: 0.5px solid var(--nile-blue);
 `;
 
+export const ManropeMediumGeyser24px = css`
+  color: var(--ui-text);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-xxxl2);
+  font-weight: 500;
+  font-style: normal;
+`;
+
+export const ManropeLightGeyser24px = css`
+  color: var(--ui-text);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-xxxl2);
+  font-weight: 300;
+  font-style: normal;
+`;
+
+export const ManropeLightCornflower24px = css`
+  color: var(--cornflower);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-xxxl2);
+  font-weight: 300;
+  font-style: normal;
+`;
+
+export const ManropeSemiBoldGeyser24px = css`
+  color: var(--ui-text);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-xxxl2);
+  font-weight: 600;
+  font-style: normal;
+`;
+
+export const SfproNormalBlueCharcoal30px = css`
+  color: var(--blue-charcoal);
+  font-family: var(--font-family-sf_pro-semibold);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  font-style: normal;
+`;
+
+export const MontserratLightGeyser60px = css`
+  color: var(--ui-text);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xxxxxl);
+  font-weight: 300;
+  font-style: normal;
+`;
+
+export const ManropeSemiBoldGeyser60px = css`
+  color: var(--ui-text);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-xxxxxl);
+  font-weight: 600;
+  font-style: normal;
+`;
+
+export const MontserratLightGeyser50px = css`
+  color: var(--ui-text);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xl);
+  font-weight: 300;
+  font-style: normal;
+`;
+
+export const ManropeLightGeyser30px = css`
+  color: var(--ui-text);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-l);
+  font-weight: 300;
+  font-style: normal;
+`;
+
+export const ManropeBoldGeyser30px = css`
+  color: var(--ui-text);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  font-style: normal;
+`;
+

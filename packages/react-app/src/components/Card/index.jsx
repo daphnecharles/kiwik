@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Group5 from "../Group5";
 import styled from "styled-components";
 import {
@@ -9,18 +10,21 @@ import {
   ManropeBoldBlueCharcoal30px,
   MontserratBoldBlueCharcoal204px,
   ValignTextMiddle,
+  MontserratLightGeyser338px
 } from "../../styledMixins";
 
 
 function Card(props) {
-  const { cartoonRocket, rockets, profilePhoto, group5Props } = props;
+  const { cartoonRocket, rockets, profilePhoto, group5Props, quickView } = props;
 
   return (
     <Card1>
       <OverlapGroup5>
-        <Group5 src={group5Props.src} />
+        <Group5 src={group5Props.src} />    
         <CartoonRocket>{cartoonRocket}</CartoonRocket>
-        <Name>Shannon Case</Name>
+        <Link to="/profile">
+           <Name>Shannon Case</Name>
+        </Link>
         <Includes3ModelsM>
           Includes 3 models. more lorem ipsum description of the asset can go in here up to two lines,....
         </Includes3ModelsM>
@@ -35,8 +39,10 @@ function Card(props) {
         <OverlapGroup2>
           <Space>#space</Space>
         </OverlapGroup2>
-        <ProfilePhoto src={profilePhoto} />
-        <VerifiedBadge style={{ right: '50px'}}src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/verified-badge@2x.svg" />
+        <Link to="/profile">
+          <ProfilePhoto src={profilePhoto} />
+          <VerifiedBadge style={{ right: '50px'}}src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/verified-badge@2x.svg" />
+        </Link>
         <StarContainer>
           <IconStar src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/star-1@2x.svg" />
           <IconStar1 src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/star-2@2x.svg" />
@@ -46,7 +52,9 @@ function Card(props) {
         </StarContainer>
         <IconHeart src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/union@2x.svg" />
         <OverlapGroup4>
-          <AddToCart>Add to cart</AddToCart>
+          <Link to="/detailed">
+          <AddToCart>Buy Now</AddToCart>
+          </Link>
         </OverlapGroup4>
       </OverlapGroup5>
     </Card1>
@@ -60,11 +68,44 @@ const Card1 = styled.div`
   box-shadow: 0px 4px 25px #00000040;
 `;
 
+const Rectangle22 = styled.div`
+  position: absolute;
+  width: 446px;
+  height: 68px;
+  top: 275px;
+  left: 0;
+  background-color: var(--ui-dark);
+`;
+
+const Rectangle23 = styled.div`
+  position: absolute;
+  width: 446px;
+  height: 298px;
+  top: 0;
+  left: 0;
+  background-color: var(--black-pearl);
+  border-radius: 16.33px;
+`;
+
+
 const OverlapGroup5 = styled.div`
   width: 446px;
   height: 630px;
   position: relative;
   border-radius: 16.33px;
+`;
+
+
+const QUICKVIEW = styled.div`
+  ${ValignTextMiddle}
+  ${MontserratLightGeyser338px}
+            position: absolute;
+  width: 273px;
+  height: 27px;
+  top: 295px;
+  left: 82px;
+  text-align: center;
+  letter-spacing: 0;
 `;
 
 const CartoonRocket = styled.div`

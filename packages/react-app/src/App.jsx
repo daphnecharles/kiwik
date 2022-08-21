@@ -542,7 +542,7 @@ const homeScreenData = {
   ellipse22: "https://bafkreiau7z5looui7rubbhfeo5k6udh54bkvl6t4332hdavgq53bxclpea.ipfs.nftstorage.link/",
   explore: "Explore",
   image1: "https://bafybeig2g5gadgpngm2pn2ckupuoqhy4b6wvxuvrotfgqesr6nsmibik5a.ipfs.nftstorage.link/image-1-3@1x.png",
-  fantasyScenery: "Fantasy Scenery",
+  fantasyScenery: "Male Chatracter",
   x3DAssetByShannonCase3: "3D asset by Shannon Case",
   ellipse23: "https://bafkreiau7z5looui7rubbhfeo5k6udh54bkvl6t4332hdavgq53bxclpea.ipfs.nftstorage.link/",
   trendingNow: "Trending Now",
@@ -550,6 +550,7 @@ const homeScreenData = {
   surname3: "Golden Dragon",
   x3DAssetByShannonCase4: "3D asset by Shannon Case",
   ellipse24: "https://bafkreiau7z5looui7rubbhfeo5k6udh54bkvl6t4332hdavgq53bxclpea.ipfs.nftstorage.link/",
+  quickView: "QUICK VIEW",
 };
 
 const group51Data = {
@@ -581,7 +582,7 @@ const profileDashboardData = {
   space1: "#space",
   profilePhoto1: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/profile-photo@2x.png",
   quickView: "QUICK VIEW",
-  addToCart1: "Add to cart",
+  addToCart1: "Buy Now",
   alienDude: "Alien Dude",
   name2: "Shannon Case",
   includes3ModelsM2: "Includes 3 models. more lorem ipsum description of the asset can go in here up to two lines,....",
@@ -591,7 +592,7 @@ const profileDashboardData = {
   cartoon2: "#cartoon",
   space2: "#space",
   profilePhoto2: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/profile-photo@2x.png",
-  addToCart2: "Add to cart",
+  addToCart2: "Buy Now",
   astronautOnTheMoon: "Astronaut on the moon",
   name3: "Shannon Case",
   includes3ModelsM3: "Includes 3 models. more lorem ipsum description of the asset can go in here up to two lines,....",
@@ -601,7 +602,7 @@ const profileDashboardData = {
   cartoon3: "#cartoon",
   space3: "#space",
   profilePhoto3: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63012919bc585b7a4af06a36/img/profile-photo@2x.png",
-  addToCart3: "Add to cart",
+  addToCart3: "Buy Now",
   shannonsMostPopularAssets: "Shannon’s most popular assets",
   youMightAlsoLike: "You might also like...",
   lensProfile: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/63015950b041066102c5131e/img/lens-profile@1x.png",
