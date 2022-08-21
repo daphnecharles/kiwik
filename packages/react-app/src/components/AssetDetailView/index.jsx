@@ -193,9 +193,11 @@ function AssetDetailView(props) {
                 </Vertices555k>
               </Vertices>
             </OverlapGroup5>
-            <OverlapGroup>
-              <BuyItNow>{buyItNow}</BuyItNow>
-            </OverlapGroup>
+            <Link to="/checkout">
+              <OverlapGroup>
+                <BuyItNow>{buyItNow}</BuyItNow>
+              </OverlapGroup>
+            </Link>
           </OverlapGroupContainer>
           <OverlapGroup7>
             <Group28 src="https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6300fb88f5b4a343a48e0a7b/img/group-28@2x.svg" />
