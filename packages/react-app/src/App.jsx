@@ -29,7 +29,8 @@ import {
   Discovery,
   ProfileDashboard,
   ExploreScreenNotConnected,
-  HomeScreenCreateProfileModal
+  HomeScreenCreateProfileModal,
+  AssetDetailView
 } from "./components";
 import { NETWORKS, ALCHEMY_KEY } from "./constants";
 import externalContracts from "./contracts/external_contracts";
@@ -374,6 +375,11 @@ function App(props) {
 
         <Route path="/profile-creation">
         <HomeScreenCreateProfileModal {...homeScreenCreateProfileModalData} />
+        </Route>
+
+        <Route exact path="/detail">
+          {/* pass in any web3 props to this Home component. For example, yourLocalBalance */}
+          <AssetDetailView {...assetDetailViewData}/>
         </Route>
 
         <Route path="/purchase-asset">
@@ -792,6 +798,71 @@ const homeScreenCreateProfileModalData = {
   ellipse32: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/ellipse-3-1@1x.png",
   cartoonRocket: "Male Character",
   price1: "1 $MATIC",
+  name1: "Shannon Case",
+  ellipse7: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/ellipse-7@2x.png",
+  text1: "(3,333)",
+  image11: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/image-1@2x.png",
+  image2: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/image-2@2x.png",
+  image3: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/image-3@2x.png",
+  image4: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/image-4@2x.png",
+  image5: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/image-5@2x.png",
+  image6: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/image-6@2x.png",
+  whatsIncluded: "What’s Included",
+  reviews: "Reviews",
+  productInformation: "Product Information",
+  licenseAgreement1: "License Agreement",
+  licenseType: "License Type",
+  fileSize: "File Size",
+  latestVersion: "Latest version",
+  latestReleaseDate: "Latest release date",
+  support: "Support",
+  licenseAgreement2: "License Agreement",
+  extensionAsset: "Extension Asset",
+  x2018Kb: "201.8 KB",
+  date: "3.4.22",
+  name2: "April 17. 2022",
+  visitSite: "Visit site",
+  frequentlyAskedQuestions: "Frequently Asked Questions",
+  spanText1: "Triangles: ",
+  spanText2: "99.9k",
+  spanText3: "Vertices: ",
+  spanText4: "55.5k",
+  buyItNow: "Buy it now",
+  discover: "Discover",
+  stats: "Stats",
+  aboutUs: "About us",
+  iconSearch: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6300fb88f5b4a343a48e0a7b/img/search-icon@2x.png",
+  search: "Search",
+  connectWallet: "Connect Wallet",
+  similarAssets: "Similar Assets",
+  image12: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/image-1-1@2x.png",
+  astronautOnTheMoon: "Astronaut on the moon",
+  name3: "Shannon Case",
+  text2: "(4,444)",
+  price2: "$10",
+  view1: "View",
+  image13: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/image-1-2@2x.png",
+  spaceShuttleWithLaunchPad: "Space Shuttle with Launch pad",
+  name4: "Shannon Case",
+  text3: "(3,333)",
+  price3: "$100",
+  view2: "View",
+  image14: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/image-1-3@2x.png",
+  rocketEngines: "Rocket Engines",
+  name5: "Shannon Case",
+  text4: "(314)",
+  price4: "$33",
+  view3: "View",
+};
+
+const assetDetailViewData = {
+  ellipse31: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/ellipse-3@1x.png",
+  ellipse5: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/ellipse-5@1x.png",
+  ellipse4: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301578345395e6f680fac6f/img/ellipse-4@1x.png",
+  ellipse6: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/ellipse-6@1x.png",
+  ellipse32: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/ellipse-3-1@1x.png",
+  cartoonRocket: "Cartoon Rocket",
+  price1: "$10",
   name1: "Shannon Case",
   ellipse7: "https://anima-uploads.s3.amazonaws.com/projects/6300fb2bb6730c825284580d/releases/6301a7a6eee9bf332cc2ccd9/img/ellipse-7@2x.png",
   text1: "(3,333)",

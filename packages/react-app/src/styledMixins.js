@@ -429,3 +429,4 @@ export const Border1pxBlueDianne = css`
 export const Border06pxNileBlue = css`
   border: 0.6px solid var(--nile-blue);
 `;
+
